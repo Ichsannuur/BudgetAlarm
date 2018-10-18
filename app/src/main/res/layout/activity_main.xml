@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#757575"
+    tools:context=".AddAlarm">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_deskripsi"
+        android:hint="Deskripsi Alarm"
+        >
+
+        <EditText
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_pengeluaran"
+        android:hint="Pengeluaran"
+        android:focusable="true"
+        android:layout_below="@+id/layout_deskripsi"
+        >
+
+        <EditText
+            android:id="@+id/pengeluaran"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_tanggal"
+        android:hint="Tanggal"
+        android:layout_below="@+id/layout_pengeluaran"
+        >
+
+        <EditText
+            android:id="@+id/tanggal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layout_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:longClickable="false"
+            android:clickable="true"
+            android:paddingBottom="20dp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_waktu"
+        android:layout_below="@+id/layout_tanggal"
+        android:hint="Waktu"
+        >
+
+        <EditText
+            android:id="@+id/waktu"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:longClickable="false"
+            android:clickable="true"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_ulang"
+        android:layout_below="@+id/layout_waktu"
+        android:hint="Ulang Alarm Sebanyak"
+        >
+        <EditText
+            android:id="@+id/ulang"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:paddingBottom="20dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_type_perulangan"
+        android:layout_below="@+id/layout_ulang"
+        android:hint="Tipe Perulangan"
+        >
+        <EditText
+            android:id="@+id/type_perulangan"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:paddingBottom="20dp"
+            android:focusable="false"
+            android:longClickable="false"
+            android:clickable="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_type_perulangan"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="Kembali"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="3dp"
+            android:background="@color/blueblack"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simpan"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="Simpan Alarm"
+            android:layout_marginStart="3dp"
+            android:textColor="@android:color/white"
+            android:background="#01579b"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

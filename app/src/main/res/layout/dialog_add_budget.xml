@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:src="@drawable/addbudget"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Tambah Budget"
+        android:textSize="26dp"
+        android:id="@+id/textReminder"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textReminder"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textBudget"
+        android:hint="Masukan Budget"
+        android:inputType="number"
+        android:background="#e0e0e0"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/simpan_budget"
+        android:layout_below="@+id/textBudget"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_pending"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_pending" />
+
+    <item
+        android:id="@+id/navigation_sucess"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="@string/title_success" />
+
+
+    <item
+        android:id="@+id/navigation_cancel"
+        android:icon="@drawable/ic_notifications_off_black_24dp"
+        android:title="@string/title_cancel" />
+</menu>

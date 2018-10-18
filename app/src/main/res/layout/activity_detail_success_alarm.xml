@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Templates.DetailAlarm">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/day"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageBackground"
+            android:foreground="#5b000000"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="12:00"
+                android:layout_centerHorizontal="true"
+                android:focusable="false"
+                android:longClickable="false"
+                android:textSize="45dp"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:layout_below="@+id/waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="2018/07/01"
+                android:layout_centerHorizontal="true"
+            />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:padding="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_deskripsi"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calendar"
+                android:id="@+id/icon_deskripsi"
+                />
+
+            <TextView
+                android:id="@+id/title_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_deskripsi"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Alarm"
+                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_deskripsi"
+                android:layout_below="@+id/title_deskripsi"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Alarm"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="11dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_pengeluaran"
+            android:layout_below="@id/status_bar_deskripsi"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calculator"
+                android:id="@+id/icon_pengeluaran"
+                />
+
+            <TextView
+                android:id="@+id/title_pengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_pengeluaran"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran"
+                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/pengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_pengeluaran"
+                android:layout_below="@+id/title_pengeluaran"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="11dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_ulang"
+            android:layout_below="@id/status_bar_pengeluaran"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/time"
+                android:id="@+id/icon_ulang"
+                />
+
+            <TextView
+                android:id="@+id/title_ulang"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_ulang"
+                android:layout_height="wrap_content"
+                android:text="Interval Ulang Alarm"
+                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/ulang"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_ulang"
+                android:layout_below="@+id/title_ulang"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="11dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_type"
+            android:layout_below="@id/status_bar_ulang"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gear"
+                android:id="@+id/icon_type"
+                />
+
+            <TextView
+                android:id="@+id/title_type"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_type"
+                android:layout_height="wrap_content"
+                android:text="Tipe Perulangan"
+                android:textSize="15dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/type_perulangan"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/icon_type"
+                android:layout_below="@+id/title_type"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="11dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:layout_below="@+id/status_bar_type"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kembali"
+                android:text="Kembali"
+                android:background="@color/blueblack"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_marginEnd="3dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete"
+                android:background="#c62828"
+                android:textColor="@color/white"
+                android:layout_marginStart="3dp"
+                android:text="Delete"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

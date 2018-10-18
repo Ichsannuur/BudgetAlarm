@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_pengeluaran"
+        android:visibility="invisible"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:padding="4dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/cancel"
+                android:id="@+id/image_cancel"
+                />
+            <TextView
+                android:id="@+id/item_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_cancel"
+                android:text="12:00 AM"
+                android:textSize="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/item_pengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_waktu"
+                android:text="Rp. 1000"
+                android:textSize="13dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/item_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/item_pengeluaran"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_waktu"
+                android:text="01 Juni 2017"
+                android:textSize="13dp"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/item_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_cancel"
+                android:layout_below="@+id/item_waktu"
+                android:text="Beli Gorengan"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

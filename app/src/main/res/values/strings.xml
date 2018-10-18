@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BudgetAlarm</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="title_success">Success</string>
+    <string name="title_pending">Pending</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

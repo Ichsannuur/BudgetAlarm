@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:src="@drawable/bell"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Reminder"
+        android:textSize="38dp"
+        android:textColor="@color/blueblack"
+        android:id="@+id/textReminder"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textReminder"
+        android:layout_marginTop="10dp"
+        android:text="Hai kami ingatkan bahwa anda memiliki catatan untuk membeli gorengan"
+        android:id="@+id/subtitle"
+        android:textColor="@color/blueblack"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="14dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok Bayar"
+            android:id="@+id/accept"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tolak"
+            android:id="@+id/ignore"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_red_dark"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

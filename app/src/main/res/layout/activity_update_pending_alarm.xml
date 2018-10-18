@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#757575"
+    tools:context=".Templates.UpdatePendingAlarm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/uri"
+        />
+    <EditText
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Alarm"
+        android:paddingBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:id="@+id/pengeluaran"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pengeluaran"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:focusable="false"
+        android:longClickable="false"
+        android:clickable="true"
+        android:paddingBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/waktu"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Waktu"
+        android:paddingBottom="20dp"
+        android:focusable="false"
+        android:longClickable="false"
+        android:clickable="true"
+        />
+
+    <EditText
+        android:id="@+id/ulang"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/waktu"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Ulangi Alarm"
+        android:paddingBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/type_perulangan"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ulang"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Type Perulangan"
+        android:paddingBottom="20dp"
+        android:focusable="false"
+        android:longClickable="false"
+        android:clickable="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_below="@+id/type_perulangan"
+        android:layout_marginTop="10dp"
+        android:text="Update Alarm"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@+id/update"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hapus"
+            android:layout_below="@+id/update"
+            android:layout_marginTop="10dp"
+            android:text="Hapus Alarm"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:textColor="@android:color/white"
+            android:background="#c62828"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/selesai"
+            android:layout_below="@+id/hapus"
+            android:layout_marginTop="10dp"
+            android:text="Selesai"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:textColor="@android:color/white"
+            android:background="@color/blueblack"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
